@@ -15,6 +15,7 @@ const TaskList = () => {
     return (
         <div className='app_container flex'>
             <div className="tasks_container bg-green-50	 w-3/4 p-16">
+                <h1 className='text-2xl'>Daily Islamic Task</h1>
                 <div className='grid gap-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 '>
                     {
                         tasks.map(task =>
@@ -25,7 +26,7 @@ const TaskList = () => {
             </div>
             <div className='w-1/4 p-5 '>
                 <User></User>
-                <div className="add_a_brack my-12 py-12">
+                <div className="add_a_brack my-12 py-4">
                     <h2 className='text-2xl'>Add a break</h2>
                     <div className='flex my-3 py-2 rounded-lg  bg-green-100 justify-evenly '>
                         <button className='p-2 m-1 rounded-full  bg-green-400 '><span className='time_value'>1</span>m</button>
