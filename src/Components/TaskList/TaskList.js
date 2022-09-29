@@ -24,7 +24,7 @@ const TaskList = () => {
                     }
                 </div>
             </div>
-            <div className='w-1/4 p-5 '>
+            <div className='w-1/4 p-5 h-screen sticky top-0'>
                 <User></User>
                 <div className="add_a_brack my-12 py-4">
                     <h2 className='text-2xl'>Add a break</h2>
