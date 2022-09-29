@@ -39,14 +39,14 @@ const TaskList = () => {
                     <h2 className='text-2xl'>Tasks Details</h2>
                     <div className='bg-green-100 rounded-lg my-3 p-3 flex justify-between '>
                         <p className=''>Task time</p>
-                        <span className='text-green-500 font-bold '>200 minuts</span>
+                        <span className='text-sky-700 font-bold '>200 minuts</span>
                     </div>
                     <div className='bg-green-100 rounded-lg my-3 p-3 flex justify-between '>
                         <p className=''>Break time</p>
-                        <span className='text-green-500 font-bold '>200 minuts</span>
+                        <span className='text-sky-700 font-bold '>200 minuts</span>
                     </div>
                 </div>
-                <button className='w-full p-3 font-bold '>Activity Completed</button>
+                <button className='w-full p-3 font-bold bg-green-400 rounded-lg '>Activity Completed</button>
             </div>
         </div>
 
