@@ -5,19 +5,21 @@ import { useState, useEffect } from 'react';
 
 const Break = () => {
     let newv = 0;
+    const [breakTimeS, setbreaTimeS] = useState(0);
+
     function handleClick(av) {
-        newv = av;
-        localStorage.setItem('break_time', av);
+        // newv = av;
+        // localStorage.setItem('break_time', av);
+        // console.log(newv);
     }
 
-    const [breakTimeS, setbreaTimeS] = useState(0);
-    useEffect(() => {
-let breakTime = localStorage.getItem('break_time');
-    setbreaTimeS(breakTime);
 
+    useEffect(() => {
+        
+        setbreaTimeS(localStorage.getItem('break_time'));
     }, []);
 
-    
+
     return (
         <div>
             <div className="add_a_brack my-2 py-4">

@@ -5,6 +5,8 @@ import Task from '../Task/Task';
 import TimeCalculate from '../TimeCalculate/TimeCalculate';
 import User from '../User/User';
 import './TaskList.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const TaskList = () => {
     const [tasks, setTasks] = useState([]);
@@ -20,6 +22,7 @@ const TaskList = () => {
         const newTime = [...timeArr, task];
         setTime(newTime);
     };
+    const notify = () => toast("Congratulation for completing the tasks.");
 
     return (
         <div>
@@ -44,7 +47,8 @@ const TaskList = () => {
                     <User></User>
                     <Break></Break>
                     <TimeCalculate arr={timeArr}></TimeCalculate>
-                    <button className='w-full p-4 text-xs lg:text-base mb-5 font-bold bg-green-400 rounded-lg '>Activity Completed</button>
+                    <button  onClick={notify} className='w-full p-4 text-xs lg:text-base mb-5 font-bold bg-green-400 rounded-lg '>Activity Completed</button>
+                    <ToastContainer position="top-center" />
                 </div>
             </div>
         </div>
