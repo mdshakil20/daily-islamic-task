@@ -36,7 +36,7 @@ const TaskList = () => {
                 <User></User>
                 <Break></Break>
                 <TimeCalculate arr={timeArr}></TimeCalculate>
-                <button className='w-full p-3 font-bold bg-green-400 rounded-lg '>Activity Completed</button>
+                <button className='w-full p-4 text-xs lg:text-base mb-5 font-bold bg-green-400 rounded-lg '>Activity Completed</button>
             </div>
         </div>
 
