@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Break from '../Break/Break';
 import Task from '../Task/Task';
 import TimeCalculate from '../TimeCalculate/TimeCalculate';
 import User from '../User/User';
@@ -13,7 +14,6 @@ const TaskList = () => {
             .then(res => res.json())
             .then(data => setTasks(data))
     }, []);
-
 
     const addTime = (task) => {
         const newTime = [...timeArr, task];
@@ -34,16 +34,7 @@ const TaskList = () => {
             </div>
             <div className='w-1/4 p-5 h-screen sticky top-0'>
                 <User></User>
-                <div className="add_a_brack my-12 py-4">
-                    <h2 className='text-2xl'>Add a break</h2>
-                    <div className='flex my-3 py-2 rounded-lg  bg-green-100 justify-evenly '>
-                        <button className='p-2 m-1 rounded-full  bg-green-400 '><span className='time_value'>1</span>m</button>
-                        <button className='p-2 m-1 rounded-full  bg-green-400 '><span className='time_value'>2</span>m</button>
-                        <button className='p-2 m-1 rounded-full  bg-green-400 '><span className='time_value'>3</span>m</button>
-                        <button className='p-2 m-1 rounded-full  bg-green-400 '><span className='time_value'>4</span>m</button>
-                        <button className='p-2 m-1 rounded-full  bg-green-400 '><span className='time_value'>5</span>m</button>
-                    </div>
-                </div>
+                <Break></Break>
                 <TimeCalculate arr={timeArr}></TimeCalculate>
                 <button className='w-full p-3 font-bold bg-green-400 rounded-lg '>Activity Completed</button>
             </div>
