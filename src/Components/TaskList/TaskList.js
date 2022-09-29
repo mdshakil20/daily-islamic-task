@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Task from '../Task/Task';
+import User from '../User/User';
 import './TaskList.css'
 
 const TaskList = () => {
@@ -22,8 +23,20 @@ const TaskList = () => {
                     }
                 </div>
             </div>
-            <div className='w-1/4'>
-                <p>this is a demo text</p>
+            <div className='w-1/4 p-5 '>
+                <User></User>
+                <div className="add_a_brack my-12 py-12">
+                    <h2 className='text-2xl'>Add a brack</h2>
+                    <div className='flex my-3 py-2 bg-green-100 justify-evenly '>
+                        <button className='p-2 m-1 rounded-full  bg-green-400 '><span className='time_value'>1</span>m</button>
+                        <button className='p-2 m-1 rounded-full  bg-green-400 '><span className='time_value'>2</span>m</button>
+                        <button className='p-2 m-1 rounded-full  bg-green-400 '><span className='time_value'>3</span>m</button>
+                        <button className='p-2 m-1 rounded-full  bg-green-400 '><span className='time_value'>4</span>m</button>
+                        <button className='p-2 m-1 rounded-full  bg-green-400 '><span className='time_value'>5</span>m</button>
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
