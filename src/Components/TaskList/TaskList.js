@@ -26,8 +26,8 @@ const TaskList = () => {
             <div className='w-1/4 p-5 '>
                 <User></User>
                 <div className="add_a_brack my-12 py-12">
-                    <h2 className='text-2xl'>Add a brack</h2>
-                    <div className='flex my-3 py-2 bg-green-100 justify-evenly '>
+                    <h2 className='text-2xl'>Add a break</h2>
+                    <div className='flex my-3 py-2 rounded-lg  bg-green-100 justify-evenly '>
                         <button className='p-2 m-1 rounded-full  bg-green-400 '><span className='time_value'>1</span>m</button>
                         <button className='p-2 m-1 rounded-full  bg-green-400 '><span className='time_value'>2</span>m</button>
                         <button className='p-2 m-1 rounded-full  bg-green-400 '><span className='time_value'>3</span>m</button>
@@ -35,8 +35,18 @@ const TaskList = () => {
                         <button className='p-2 m-1 rounded-full  bg-green-400 '><span className='time_value'>5</span>m</button>
                     </div>
                 </div>
-
-
+                <div className="task_time_details my-12">
+                    <h2 className='text-2xl'>Tasks Details</h2>
+                    <div className='bg-green-100 rounded-lg my-3 p-3 flex justify-between '>
+                        <p className=''>Task time</p>
+                        <span className='text-green-500 font-bold '>200 minuts</span>
+                    </div>
+                    <div className='bg-green-100 rounded-lg my-3 p-3 flex justify-between '>
+                        <p className=''>Break time</p>
+                        <span className='text-green-500 font-bold '>200 minuts</span>
+                    </div>
+                </div>
+                <button className='w-full p-3 font-bold '>Activity Completed</button>
             </div>
         </div>
 
