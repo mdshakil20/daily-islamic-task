@@ -4,41 +4,41 @@
     "img": "https://i.ibb.co/nLjmWJ5/fajar.png",
     "name": "Fajr Salah",
     "details": "The prayer movements would enhance flexibility and general muscular fitness.",
-    "time": "20m"
+    "time": 20
   },
   {
     "id": 2,
     "img": "https://i.ibb.co/YpdNcqM/jahar.png",
     "name": "Dhuhr Salah",
     "details": "The prayer movements would enhance flexibility and general muscular fitness.",
-    "time": "30m"
+    "time": 30
   },
   {
     "id": 3,
     "img": "https://i.ibb.co/GnBqTKN/asor.png",
     "name": "Asr Salah",
     "details": "The prayer movements would enhance flexibility and general muscular fitness.",
-    "time": "15m"
+    "time": 15
   },
   {
     "id": 4,
     "img": "https://i.ibb.co/FgfjZct/magrib.png",
     "name": "Maghrib Salah",
     "details": "The prayer movements would enhance flexibility and general muscular fitness.",
-    "time": "25m"
+    "time": 25
   },
   {
     "id": 5,
     "img": "https://i.ibb.co/pZYsj8w/esa.png",
     "name": "Ishaa Salah",
     "details": "The prayer movements would enhance flexibility and general muscular fitness.",
-    "time": "30m"
+    "time": 30
   },
   {
     "id": 6,
     "img": "https://i.ibb.co/xYWBWM6/quran.png",
     "name": "Reading Quran",
     "details": "The love of Allah increases as everything written in the Quran is directly from Allah.",
-    "time": "40m"
+    "time": 40
   }
 ]

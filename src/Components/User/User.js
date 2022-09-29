@@ -10,7 +10,6 @@ const User = () => {
                     <p className=''>Web Developer</p>
                 </div>
             </div>
-
         </div>
     );
 };

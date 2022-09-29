@@ -1,16 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import Task from '../Task/Task';
+import TimeCalculate from '../TimeCalculate/TimeCalculate';
 import User from '../User/User';
 import './TaskList.css'
 
 const TaskList = () => {
     const [tasks, setTasks] = useState([]);
+    const [timeArr, setTime] = useState([]);
 
     useEffect(() => {
         fetch('tasks.json')
             .then(res => res.json())
             .then(data => setTasks(data))
-    }, [])
+    }, []);
+
+
+    const addTime = (task) => {
+        const newTime = [...timeArr, task];
+        setTime(newTime);
+    };
 
     return (
         <div className='app_container flex'>
@@ -19,7 +27,7 @@ const TaskList = () => {
                 <div className='grid gap-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 '>
                     {
                         tasks.map(task =>
-                            <Task key={task.id} task={task}></Task>
+                            <Task key={task.id} task={task} addBtn={addTime}></Task>
                         )
                     }
                 </div>
@@ -36,17 +44,7 @@ const TaskList = () => {
                         <button className='p-2 m-1 rounded-full  bg-green-400 '><span className='time_value'>5</span>m</button>
                     </div>
                 </div>
-                <div className="task_time_details my-12">
-                    <h2 className='text-2xl'>Tasks Details</h2>
-                    <div className='bg-green-100 rounded-lg my-3 p-3 flex justify-between '>
-                        <p className=''>Task time</p>
-                        <span className='text-sky-700 font-bold '>200 minuts</span>
-                    </div>
-                    <div className='bg-green-100 rounded-lg my-3 p-3 flex justify-between '>
-                        <p className=''>Break time</p>
-                        <span className='text-sky-700 font-bold '>200 minuts</span>
-                    </div>
-                </div>
+                <TimeCalculate arr={timeArr}></TimeCalculate>
                 <button className='w-full p-3 font-bold bg-green-400 rounded-lg '>Activity Completed</button>
             </div>
         </div>
